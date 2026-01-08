@@ -32,3 +32,9 @@ execute if score #global_tick global matches 1 run function global:tick
 # ─────────────────────────────
 
 execute if score #cooldown_active global matches 1 run function cooldown:loop
+
+# ─────────────────────────────
+# ANA İŞLER
+# ─────────────────────────────
+
+execute if score #main global matches 1 run function gulce_adminpower_addons:loop
