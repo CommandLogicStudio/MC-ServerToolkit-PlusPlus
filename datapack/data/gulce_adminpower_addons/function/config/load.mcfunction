@@ -10,8 +10,6 @@ $function custom_admin:dialogs/menu/rules/show {"Player":"$(DisplayRules)"}
 # Diğer...
 $recipe $(diamond_to_emerald_recipe) @a gulce_adminpower_addons:diamond_to_emerald
 $function gulce_adminpower_addons:config/cl {"cl_second":"$(cl_second)s"}
-$function gulce_adminpower_addons:help_menu/enable/2 {"action":"$(TriggerHelpCommand)"}
-$function gulce_adminpower_addons:config/main {"load":"$(load)"}
 $function gulce_adminpower_addons:config/time {"time":"$(time)"}
 $difficulty $(difficulty)
 $function gulce_adminpower_addons:config/xp {"action":"add","xp":"$(xp)"}

@@ -12,15 +12,6 @@
       "initial": 50
     },
     {
-      "type": "minecraft:number_range",
-      "key": "loop",
-      "label": "Döngü Süresi (saniye)",
-      "start": 1,
-      "end": 100,
-      "step": 1,
-      "initial": 50
-    },
-    {
       "type": "text",
       "key": "DisplayRules",
       "label": "Kuralları Gösterilecek Oyuncu",
@@ -31,7 +22,7 @@
       "key": "cl_second",
       "label": "Temizleme Süresi (saniye)",
       "start": 1,
-      "end": 100,
+      "end": 500,
       "step": 1,
       "initial": 50
     },
@@ -55,35 +46,12 @@
       "key": "level",
       "label": "İzin Seviyesi",
       "options": [
-        {
-          "id": "1"
-        },
-        {
-          "id": "2"
-        },
-        {
-          "id": "3"
-        },
-        {
-          "id": "4"
-        },
-        {
-          "id": "5"
-        }
+        { "id": "1" },
+        { "id": "2" },
+        { "id": "3" },
+        { "id": "4" },
+        { "id": "5" }
       ]
-    },
-    {
-      "type": "minecraft:text",
-      "key": "Vers",
-      "label": "Sürüm",
-      "max_length": 1000000
-    },
-    {
-      "type": "minecraft:boolean",
-      "key": "thc",
-      "label": "'/trigger ap_help-menu' Komutu",
-      "on_true": "add",
-      "on_false": "remove"
     }
   ],
   "can_close_with_escape": true,
@@ -97,16 +65,7 @@
       "width": 40,
       "action": {
         "type": "minecraft:dynamic/run_command",
-        "template": "/function gulce_adminpower_addons:config/load {\"load_second\":\"$(load_second)\",\"loop\":\"$(loop)\",\"DisplayRules\":\"$(DisplayRules)\",\"cl_second\":\"$(cl_second)\",\"diamond_to_emerald_recipe\":\"$(diamond_to_emerald_recipe)\",\"level\":$(level),\"TriggerHelpCommand\":\"$(thc)\"}"
-      }
-    },
-    {
-      "label": "Yeniden Yükle",
-      "tooltip": "Bu Buton DataPack'i Yeniden Yükler",
-      "width": 76,
-      "action": {
-        "type": "minecraft:dynamic/run_command",
-        "template": "/function gulce_adminpower_addons:reload/init {Version:\"$(Vers)\"}"
+        "template": "/function gulce_adminpower_addons:config/load {\"load_second\":\"$(load_second)\",\"DisplayRules\":\"$(DisplayRules)\",\"cl_second\":\"$(cl_second)\",\"diamond_to_emerald_recipe\":\"$(diamond_to_emerald_recipe)\",\"level\":$(level)}"
       }
     },
     {
@@ -119,12 +78,12 @@
       }
     },
     {
-      "label": "Dahası",
-      "tooltip": "Bu Buton Daha Fazla Özellik Ekler",
+      "label": "Gelişmiş",
+      "tooltip": "Sunucu kontrol panelini açar",
       "width": 41,
       "action": {
         "type": "minecraft:show_dialog",
-        "dialog": "gulce_adminpower_addons:config2"
+        "dialog": "main:global_control_panel/part_1"
       }
     }
   ]
