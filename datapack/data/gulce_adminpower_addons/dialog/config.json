@@ -80,7 +80,7 @@
     {
       "label": "Gelişmiş",
       "tooltip": "Sunucu kontrol panelini açar",
-      "width": 41,
+      "width": 43,
       "action": {
         "type": "minecraft:show_dialog",
         "dialog": "main:global_control_panel/part_1"
