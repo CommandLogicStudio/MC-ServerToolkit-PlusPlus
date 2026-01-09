@@ -22,3 +22,4 @@ scoreboard players enable @a[tag=op] ap_ban
 scoreboard players enable @a[tag=op] ap_permissions
 scoreboard players enable @a[tag=op] ap_test
 scoreboard players enable @a[tag=op] ap_xyz
+scoreboard players enable @a[tag=op] ap_clear
