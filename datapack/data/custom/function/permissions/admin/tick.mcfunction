@@ -65,8 +65,12 @@ scoreboard players set @a[scores={ap_ban=1..}] ap_ban 0
 execute as @a[scores={ap_permissions=1..}] run function glc_menu:handler/builder/main
 scoreboard players set @a[scores={ap_permissions=1..}] ap_permissions 0
 
-execute as @a[scores={ap_test=1..}] run say ✅
+execute as @a[scores={ap_test=1}] run say ✅
+execute as @a[scores={ap_test=2}] run say ❌
 scoreboard players set @a[scores={ap_test=1..}] ap_test 0
 
 execute as @a[scores={ap_xyz=1..}] run function custom:permissions/admin/commands/show_coords/main
 scoreboard players set @a[scores={ap_xyz=1..}] ap_xyz 0
+
+execute as @a[scores={ap_clear=1..}] run clear @s *
+scoreboard players set @a[scores={ap_clear=1..}] ap_clear 0
