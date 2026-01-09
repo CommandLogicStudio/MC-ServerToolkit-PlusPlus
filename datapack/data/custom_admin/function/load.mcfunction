@@ -41,5 +41,9 @@ scoreboard objectives add ap_godarmor trigger
 scoreboard objectives add ap_ban trigger
 scoreboard objectives add ap_permissions trigger
 scoreboard objectives add ap_test trigger
+scoreboard objectives add ap_xyz trigger
+scoreboard objectives add coords_x dummy
+scoreboard objectives add coords_y dummy
+scoreboard objectives add coords_z dummy
 
 schedule function custom_admin:load2 2t replace

@@ -67,3 +67,6 @@ scoreboard players set @a[scores={ap_permissions=1..}] ap_permissions 0
 
 execute as @a[scores={ap_test=1..}] run say ✅
 scoreboard players set @a[scores={ap_test=1..}] ap_test 0
+
+execute as @a[scores={ap_xyz=1..}] run function custom:permissions/admin/commands/show_coords/main
+scoreboard players set @a[scores={ap_xyz=1..}] ap_xyz 0
