@@ -1,5 +1,3 @@
-advancement revoke @s from actions:on_config
-
 # Menü Aç
 execute at @s[tag=op] run function actions:menu/1 {Selector:"@s",Unless:"tag=op"}
 execute at @s[tag=op] run data modify storage userfunc:log actions set value {OpenedMenu:"main"}
