@@ -1,0 +1,1 @@
+give @s minecraft:nether_star[minecraft:custom_data={ComfigUI:1b},minecraft:consumable={animation:"none",consume_seconds:0.0f,has_consume_particles:0b,sound:"minecraft:block.note_block.hat"},minecraft:custom_name={"text":"Admin Asası","italic":false,"color":"gold"}] 1
