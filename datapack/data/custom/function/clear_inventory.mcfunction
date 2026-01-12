@@ -1,1 +1,1 @@
-clear @s
+$clear $(player) $(item) $(count)
